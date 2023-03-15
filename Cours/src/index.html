@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(54, 74, 74);
+        }
+        table {
+            width: 100%;
+            color: bisque;
+        }
+
+        table tr:nth-child(odd) {
+            background-color: aqua;
+            color: black;
+        }
+
+        table:nth-col(1n+1) {
+            background-color: red;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption>Liste des etudiants de L3 Genie Info UCAO</caption>
+       
+        <thead>
+            <tr>
+                <th colspan="2">Prenom & Nom</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr style="font-style: italic;">
+                <td>Fanta</td>
+                <td>Maiga</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Fanta</td>
+                <td>Maiga</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Fanta</td>
+                <td>Maiga</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Fanta</td>
+                <td>Maiga</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Fanta</td>
+                <td>Maiga</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Fanta</td>
+                <td>Maiga</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total Age</td>
+                <td>120</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <form action="" method="" enctype="multipart/form-data">
+        <input type="text">
+        <input type="url">
+        <input type="color">
+        <input type="email">
+        <input type="date">
+        <input type="month">
+        <input type="file">
+        <input type="password">
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
+

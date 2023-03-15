@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Mon Blog</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="blog, article">
+        <meta name="author" content="Mon nom">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link rel="shortcut icon" href="template.ico" type="image/x-icon">
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        html, body {
+            background-color: rgb(219, 239, 245);
+        }
+        .entete {
+            height: 100px;
+            display: flex;
+        }
+        h1 {
+            color: rgb(37, 47, 77);
+            margin: auto;
+        }
+        .blogs {
+            padding: 0 150px;
+        }
+        .blog {
+            clear: both;
+            margin: 20px 0;
+            padding: 20px;
+            display: inline-block;
+            background-color: rgb(248, 248, 248);
+        }
+        .content {
+            margin-top: 10px;
+        }
+        .blog p {
+            font-size: 18px;
+            text-align: justify;
+        }
+        .titre-blog {
+            padding-left: 5px;
+            border-bottom: 5px solid lightblue;
+            margin-bottom: 5px;
+        }
+        .img-blog {
+            margin: 8px 8px 0 0;
+            width: 130px;
+            height: 70%;
+            float: left;
+        }
+        .date-blog {
+            margin-top: 5px;
+            font-weight: lighter;
+        }
+
+        @media screen and (max-width: 992px) {
+            .blogs {
+                padding: 0 60px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .blogs {
+                padding: 0 10px;
+            }
+        }
+
+        
+    </style>
+    <body>
+        <div class="entete">
+            <h1>Blog de l'UCAO</h1>
+        </div>
+        <div class="blogs">
+            <div class="blog">
+                <h2 class="titre-blog">Titre de du blog</h2>
+                - par <strong>Fanta Maiga</strong> <span class="date-blog">le 8 Mars 2023</span> 
+                <div class="content">
+                    <img class="img-blog" src="src/image2.png" alt="Titre de du blog">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quae magnam delectus ipsam earum repellat nisi, veritatis sit laboriosam esse exercitationem ea quod facere voluptates quisquam odit architecto asperiores et dolor tenetur, illum laudantium eum soluta quas? Impedit quam, ipsum optio expedita suscipit accusantium quod dolor earum quis excepturi deserunt vel modi. Ducimus, molestiae ipsa quos tempora earum debitis dignissimos libero nobis tenetur, dolore repudiandae rem perferendis odit dolores. Mollitia ipsa voluptate iure quod hic nihil, dolorum at magnam, libero accusantium ab laborum ullam quibusdam quasi est minima odio saepe atque doloribus! Consequuntur consectetur dolores debitis quam animi culpa excepturi! <br>
+                        <a href="#">Lire la suite...</a>
+                    </p>
+                </div>
+            </div>
+            <div class="blog">
+                <h2 class="titre-blog">Titre de du blog</h2>
+                - par <strong>Fanta Maiga</strong> <span class="date-blog">le 8 Mars 2023</span> 
+                <div class="content">
+                    <img class="img-blog" src="src/image2.png" alt="Titre de du blog">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quae magnam delectus ipsam earum repellat nisi, veritatis sit laboriosam esse exercitationem ea quod facere voluptates quisquam odit architecto asperiores et dolor tenetur, illum laudantium eum soluta quas? Impedit quam, ipsum optio expedita suscipit accusantium quod dolor earum quis excepturi deserunt vel modi. Ducimus, molestiae ipsa quos tempora earum debitis dignissimos libero nobis tenetur, dolore repudiandae rem perferendis odit dolores. Mollitia ipsa voluptate iure quod hic nihil, dolorum at magnam, libero accusantium ab laborum ullam quibusdam quasi est minima odio saepe atque doloribus! Consequuntur consectetur dolores debitis quam animi culpa excepturi! <br>
+                        <a href="#">Lire la suite...</a>
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>
