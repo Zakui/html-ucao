@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabullation</title>
+
+    <style>
+        .active {
+            border-color: green;
+            color: white;
+            background-color: green;
+        }
+
+        .contenu {display: none;}
+        .active-contenu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <button id="btn-mangue" onclick="activeFruit(event, 'mangue')" class="links active">Mangues</button>
+        <button id="btn-orange" onclick="activeFruit(event, 'orange')" class="links">Oranges</button>
+        <button id="btn-banane" onclick="activeFruit(event, 'banane')" class="links">Bananes</button>
+        <button id="btn-ananas" onclick="activeFruit(event, 'ananas')" class="links">Ananas</button>
+    </div>
+
+
+    <div id="ctn-mangue" class="contenu active-contenu">
+        <h3>Mangues</h3>
+        <p>Les mangues sont .....</p>
+    </div>
+
+    <div id="ctn-orange" class="contenu">
+        <h3>Oranges</h3>
+        <p>Les oranges sont .....</p>
+    </div>
+
+    <div id="ctn-banane" class="contenu">
+        <h3>Bananes</h3>
+        <p>Les bananes sont .....</p>
+    </div>
+
+    <div id="ctn-ananas" class="contenu">
+        <h3>Ananas</h3>
+        <p>Les ananas sont .....</p>
+    </div>
+
+
+    <script>
+        function activeFruit(event, nom) {
+            // suppression de la classe active sur tout les buttons
+            const btns = document.getElementsByClassName("links")
+            for (let index = 0; index < btns.length; index++) {
+                btns[index].className = btns[index].className.replace('active', '');
+            }
+
+            // ajout de classe active sur le button selectionner
+            const btn = document.getElementById("btn-"+nom)
+            btn.className = btn.className + ' active'
+
+
+            
+            
+            // suppression de la classe active sur tout les contenus
+            const contenus = document.getElementsByClassName("contenu")
+            for (let index = 0; index < contenus.length; index++) {
+                contenus[index].className = contenus[index].className.replace('active-contenu', '');
+            }
+
+            // ajout de classe active sur le contenu du button selectionner
+            const contenu = document.getElementById("ctn-"+nom)
+            contenu.className = contenu.className + ' active-contenu'
+        }
+    </script>
+</body>
+</html>
