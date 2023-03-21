@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <style>
+        .cacher {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" onkeyup="rechercher(event)" >
+    <ul id="list">
+        <li>Fanta</li>
+        <li>Marie Paul</li>
+        <li>Aicha</li>
+        <li>Mariame</li>
+        <li>Nafisatou</li>
+        <li>Augustin</li>
+        <li>Gabriel</li>
+        <li>Aziz</li>
+        <li>Mafoudia</li>
+        <li>Mouctar</li>
+        <li>Mariame</li>
+        <li>Nafisatou</li>
+        <li>Augustin</li>
+        <li>Gabriel</li>
+        <li>Aziz</li>
+        <li>Mafoudia</li>
+        <li>Mouctar</li>
+        <li>Aicha</li>
+        <li>Mariame</li>
+        <li>Nafisatou</li>
+        <li>Augustin</li>
+        <li>Gabriel</li>
+    </ul>
+    <script>
+       function rechercher(event) {
+        const text = event.target.value
+
+        const list = document.getElementById('list')
+
+        for (let index = 0; index < list.children.length; index++) {
+            if (list.children[index].innerText.toUpperCase().indexOf(text.toUpperCase()) >= 0) {
+                list.children[index].className = ''
+            } else {
+                list.children[index].className = 'cacher'
+            }
+            
+        }
+       }
+    </script>
+</body>
+</html>
