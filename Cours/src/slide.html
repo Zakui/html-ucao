@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+
+    <style>
+        img {
+            max-width: 200px;
+            display: none;
+        }
+        .active {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="precedent()">Precedent</button>
+
+    <div name="slide">
+        <img src="img/off.gif" class="active"  alt="Slide image">
+        <img src="img/on.gif"  alt="Slide image">
+        <img src="img/image.png"  alt="Slide image">
+        <img src="img/image2.png"  alt="Slide image">
+    </div>
+
+    <button onclick="suivant()">Suivant</button>
+
+    <script>
+        function suivant() {
+            const img = document.getElementsByClassName("active")[0]
+            
+            
+            img.className = ""
+            if(img.nextElementSibling) {
+                img.nextElementSibling.className = "active"
+            } else {
+                document.getElementsByTagName("img")[0].className = "active"
+            }
+        }
+
+        function precedent() {
+            const img = document.getElementsByClassName("active")[0]
+            
+            img.className = ""
+            if(img.previousElementSibling) {
+                img.previousElementSibling.className = "active"
+            } else {
+                const imgs = document.getElementsByTagName("img")
+                imgs[imgs.length-1].className = "active"
+            }
+        }
+
+        // function slide() {
+
+        //     const img = document.getElementsByClassName("active")[0]
+            
+        //     img.className = ""
+        //     if(img.nextElementSibling) {
+        //         img.nextElementSibling.className = "active"
+        //     } else {
+        //         document.getElementsByTagName("img")[0].className = "active"
+        //     }
+        // }
+
+
+
+        // setInterval(() => {
+        //     suivant()
+        // }, 2000);
+
+       
+    </script>
+</body>
+</html>
