@@ -1,0 +1,174 @@
+body {
+    background: #cbd3ff;
+    font-family: 'Times New Roman', Times, serif;
+}
+.page {
+    background: #ffffff;
+    display: flex;
+    margin: auto;
+    margin-bottom: 0.2cm;
+    box-shadow: 0 0 0.5cm #00000080;
+    width: 21cm;
+    height: 29.7cm; 
+}
+.sidebar {
+    width: 33%;
+    background-color: #E7E6E6;
+}
+.content {
+    width: 67%;
+    padding: 0 .5cm;
+    font-size: 14px;
+}
+.new-page {
+    margin-top: .7cm;
+}
+.line {
+    margin-top: -16px;
+    height: .1cm;
+    background-color: #4472C4;
+}
+.title {
+    color: #4472C4;
+    font-size: 20px;
+}
+
+/* 
+    Style du sidebar
+*/
+.mon_nom {
+    text-align: center;
+    padding: .3cm 0;
+    background-color: #4472C4;
+    color: #ffffff;
+}
+.mt-2 {
+    margin-top: -.3cm;
+}
+.fleche {
+    width: 0;
+    height: 0; 
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+    border-top: 70px solid #4472C4;
+    position: absolute;
+}
+.initial-cercle {
+    text-align: center;
+    margin: auto;
+    height: 80px;
+    width: 80px;
+    border: .3cm solid #4472C4;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.initial-cercle h1 {
+    color: #4472C4;
+    font-size: 40px;
+}
+.adresse {
+    text-align: center;
+    margin-top: .2cm;
+    font-size: 17px;
+    color: #4472C4;
+}
+.adresse .adr1 {
+    display: inline-block;
+    margin-top: .1cm;
+}
+
+.adresse .adr2 {
+    display: inline-block;
+    margin-top: .2cm;
+}
+.number {
+    margin-top: .6cm !important;
+}
+.number span {
+    font-weight: bold;
+}
+.competence {
+    margin-top: 1cm;
+    padding: 0 .3cm;
+}
+.competence h3 {
+    font-size: 19px;
+}
+.c_contenu {
+    margin-top: -15px;
+}
+
+.langues {
+    margin-top: 2cm;
+    padding: 0 .3cm;
+}
+.langues h3 {
+    display: inline-block;
+    margin: .1cm 0;
+}
+.langues .langue {
+    margin-top: .1.5cm;
+}
+
+/* 
+    Style contenu
+*/
+.profile {
+    font-size: 17px;
+}
+
+.profile p {
+    margin: 0.2cm 0;
+}
+
+.poste {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.poste h3, .projet-desc h4  {
+    margin: 0.15cm 0;
+}
+.p-mt {
+    margin-top: 0.15cm;
+}
+.p-mb {
+    margin-bottom: 0.15cm;
+}
+.title2 {
+    color: #4472C4;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.entreprise {
+    margin-top: -.15cm;
+}
+ul {
+    list-style-type: "-  ";
+}
+.interets ul {
+    font-size: 20px;
+    list-style: none;
+}
+.interets ul li::before {
+    content: "•";
+    color: #4472C4;
+    font-size: 25px;
+    display: inline-block;
+    width: .5cm;
+    margin-left: -.2cm;
+}
+
+
+@media print {
+    body, .page {
+        margin: 0;
+        box-shadow: 0;
+    }
+}
